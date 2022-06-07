@@ -27,8 +27,11 @@ const CocktailDetail = () => {
   }, [idDrink]);
 
   return (
-    <div>
-      {detail.strDrink}, {detail.idDrink}
+    <div className="bg-zinc-800 w-screen h-screen">
+      <div className="w-6/12 bg-slate-300 rounded-lg">
+        <p>{detail.strDrink}</p>
+        <img src={detail.strDrinkThumb} alt="" />
+      </div>
     </div>
   );
 };

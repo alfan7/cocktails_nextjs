@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import axios from "axios";
 
+import Navbar from "../../components/navbar";
+
 const CardTest = ({ props }) => {
   return (
-    <div className="flex flex-row flex-wrap justify-around">
+    <div className="mx-4 pt-16 flex flex-row flex-wrap justify-around">
       {props.map((data) => (
         <Link href={"/home/" + data.idDrink} key={data.idDrink}>
           <div className="card w-80 m-8 rounded-lg">
@@ -43,8 +45,9 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className="bg-slate-800">
       <title>Cocktail boi</title>
+      <Navbar />
       {loading && (
         <div className="mx-auto">
           <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg>
