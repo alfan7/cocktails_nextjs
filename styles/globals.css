@@ -17,6 +17,13 @@ a {
 * {
   box-sizing: border-box;
 }
+/* Landing Section */
+.landing-background {
+  background-image: linear-gradient(55deg, hsl(340deg 39% 48%) 0%, hsl(314deg 15% 45%) 33%, hsl(206deg 19% 46%) 71%, hsl(188deg 44% 42%) 100%);
+  box-shadow: 2px 2px 95px -5px rgba(0, 0, 0, 0.35) inset;
+  -webkit-box-shadow: 2px 2px 95px -5px rgba(0, 0, 0, 0.35) inset;
+  -moz-box-shadow: 2px 2px 95px -5px rgba(0, 0, 0, 0.35) inset;
+}
 
 /*Cocktail Card Section */
 
