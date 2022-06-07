@@ -10,12 +10,12 @@ const Landing = () => {
     <div className="landing-background w-screen h-screen ">
       <div className="w-screen h-screen flex flex-row justify-center items-center">
         <div className=" flex justify-center">
-          <img className="opacity-50" src="/landing_img.png" alt="" />
+          <img className="w-11/12 ml-8" src="/landing_img.png" alt="" />
         </div>
         <div className="p-24 landing-text my-auto mx-auto flex flex-col gap-16">
           <p className="text-slate-200 text-7xl italic font-semilight">Cocktail Cheatsheet</p>
           <Link href={"/home"}>
-            <button className="w-3/9 p-2 italic font-semilight bg-slate-700 rounded">Go To List</button>
+            <button className="w-11/12 p-2 italic font-semilight bg-slate-700 hover:bg-slate-900 text-white text-lg font-semibold rounded">Go To List</button>
           </Link>
         </div>
       </div>
