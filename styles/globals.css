@@ -94,6 +94,7 @@ a {
 /* Search Bar Section */
 
 .search-box {
+  z-index: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,7 +105,7 @@ a {
   padding: 10px;
 }
 .search-box:hover > .search-text {
-  width: 240px;
+  width: 300px;
   padding: 0 6px;
 }
 .search-box:hover > .search-btn {
