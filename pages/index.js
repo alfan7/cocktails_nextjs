@@ -7,7 +7,8 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="landing-background w-screen h-screen ">
+    <div className="landing-background w-screen ">
+      <title>Cocktail Cheatsheet</title>
       <div className="w-screen h-screen flex flex-row justify-center items-center">
         <div className=" flex justify-center">
           <img className="w-11/12 ml-8" src="/landing_img.png" alt="" />

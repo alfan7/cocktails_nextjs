@@ -31,7 +31,7 @@ const CocktailDetail = () => {
   return (
     <div className="bg-zinc-800 w-screen h-screen ">
       <title>{detail.strDrink} | Cocktail Cheatsheet</title>
-      <img className="h-screen w-screen object-cover opacity-10 z-0 absolute transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300" src={detail.strDrinkThumb} alt="" />
+      <img className=" w-screen object-cover opacity-5 z-0 absolute transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 duration-300" src={detail.strDrinkThumb} alt="" />
       <Link href={"/home/"}>
         <div className="absolute z-0 m-4">
           <button>
@@ -39,13 +39,17 @@ const CocktailDetail = () => {
           </button>
         </div>
       </Link>
-      <div className="w-6/12 h-4/6 mx-auto pt-2 flex flex-row top-20 justify-center z-10 relative gap-4 items-center bg-slate-300 rounded-lg ">
-        <img className="rounded-lg w-1/2 transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-100 hover:rotate-1 duration-300" src={detail.strDrinkThumb} alt="" />
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col pt-20 px-4 gap-4 justify-center xl:flex-row">
+        <div className="detail-card p-8 flex flex-row gap-4 items-center rounded-lg ">
+          <img className="rounded-lg w-80 transition ease-in-out hover:-translate-y-5 hover:scale-100 hover:rotate-1 duration-300" src={detail.strDrinkThumb} alt="" />
+        </div>
+        <div className="detail-card p-4 flex flex-col gap-4 rounded-lg">
           <p className="text-5xl font-semilight italic">{detail.strDrink}</p>
           <p className="text-xl font-semibold italic">#{detail.strCategory}</p>
-          <ul className="flex flex-col gap-2">
-            <div className="flex justify-between">
+          <p className="text-md">{detail.strInstructions}</p>
+          <ul className="w-60 flex flex-col gap-2">
+            <p>Ingredients : </p>
+            <div className=" flex justify-between">
               <li>{detail.strIngredient1}</li>
               <li>{detail.strMeasure1}</li>
             </div>
